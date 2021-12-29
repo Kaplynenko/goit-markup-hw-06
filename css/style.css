@@ -905,3 +905,7 @@ textarea[name="feedback"] {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+.form-link {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
