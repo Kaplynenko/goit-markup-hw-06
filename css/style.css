@@ -877,6 +877,7 @@ textarea[name="feedback"] {
 .input-footer:focus {
   outline-color: var(--accent-color);
   outline-style: 1px;
+  border-color: var(--accent-color);
 }
 .input-footer {
   width: 358px;
@@ -887,6 +888,7 @@ textarea[name="feedback"] {
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   background-color: var(--background-hero-footer);
+  outline-style: none;
 }
 .input-footer::placeholder {
   padding-left: 16px;
