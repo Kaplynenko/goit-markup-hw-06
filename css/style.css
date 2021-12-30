@@ -846,6 +846,7 @@ textarea[name="feedback"] {
 .form-field.check {
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
 }
 .checkbox-icon {
   width: 16px;
