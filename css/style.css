@@ -727,7 +727,7 @@ ul {
   display: flex;
   flex-direction: column;
   width: 528px;
-  height: 581px;
+  padding: 40px;
   background-color: var(--primery-background);
 }
 
@@ -739,6 +739,10 @@ ul {
   margin: 0;
   padding: 0;
   background-color: var(--primery-background);
+  fill: var(--secondary-text-color);
+}
+.modal-btn:focus {
+  fill: var(--accent-color);
 }
 
 .btn-form {
@@ -769,8 +773,6 @@ b {
 .form-field {
   position: relative;
   margin-bottom: 30px;
-  margin-left: 40px;
-  margin-right: 40px;
   display: block;
 }
 textarea[name="feedback"] {
@@ -897,7 +899,7 @@ textarea[name="feedback"] {
   color: rgba(255, 255, 255, 0.6);
 }
 .form-footer {
-  margin-left: 93px;
+  margin-left: auto;
 }
 .form-footer > b {
   margin: 0;
