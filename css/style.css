@@ -42,10 +42,18 @@ header {
 }
 body {
   font-family: "Roboto", sans-serif;
-  font: size 14px;
+  font-size: 14px;
   letter-spacing: 0.03;
   color: var(--main-content-color);
   background-color: var(--primery-background);
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
 }
 /* Логотип */
 .main-nav .logo {
@@ -137,9 +145,6 @@ body {
   align-items: center;
 }
 
-.link > svg {
-  width: 16px;
-}
 .contacts {
   align-items: center;
   flex-wrap: nowrap;
@@ -159,8 +164,10 @@ body {
 .contact-icon {
   display: flex;
   fill: var(--main-content-color);
-  margin-right: 30px;
   align-content: center;
+}
+.contact-icon.mail {
+  margin-right: 30px;
 }
 .contact-icon:hover {
   color: var(--accent-color);
@@ -568,11 +575,11 @@ img {
   margin-top: 0;
   margin-bottom: 0;
 }
-.cards-item:hover {
-  box-sizing: border-box;
+.card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 .cards-item .card {
   color: var(--secondary-text-color);
   font-weight: 700;
@@ -739,8 +746,13 @@ ul {
   margin: 0;
   padding: 0;
   background-color: var(--primery-background);
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
   fill: var(--secondary-text-color);
 }
+
 .modal-btn:focus {
   fill: var(--accent-color);
 }
@@ -849,8 +861,8 @@ textarea[name="feedback"] {
   margin-bottom: 30px;
 }
 .checkbox-icon {
-  width: 16px;
-  height: 15px;
+  /* width: 16px;
+  height: 15px; */
   border: 2px solid var(--secondary-text-color);
   border-radius: 4px;
   display: inline-block;
@@ -858,7 +870,7 @@ textarea[name="feedback"] {
 }
 .checkbox:checked + .checkbox-icon {
   background-color: var(--accent-color);
-  background-size: contain;
+  background-size: cover;
   background-origin: border-box;
   border-color: var(--accent-color);
 }
