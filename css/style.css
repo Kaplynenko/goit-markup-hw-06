@@ -737,7 +737,10 @@ ul {
   padding: 40px;
   background-color: var(--primery-background);
 }
-
+.modal-btn__icon {
+  width: 30px;
+  height: 30px;
+}
 .modal-btn {
   position: absolute;
   top: 8px;
@@ -745,7 +748,7 @@ ul {
   border: none;
   margin: 0;
   padding: 0;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   background-color: var(--primery-background);
   width: 30px;
